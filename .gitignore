@@ -1,0 +1,5 @@
+quiz-api/node_modules
+quiz-ui/node_modules
+.DS_Store
+
+quiz-api/.vscode/launch.json

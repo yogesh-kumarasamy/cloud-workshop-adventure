@@ -1,0 +1,187 @@
+[
+    {
+      "id": 1,
+      "title": "HTML Basics",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does HTML stand for?",
+          "options": ["HyperText Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language"],
+          "correctAnswer": "HyperText Markup Language"
+        },
+        {
+          "id": 2,
+          "question": "Which HTML tag is used to define a hyperlink?",
+          "options": ["<a>", "<link>", "<href>"],
+          "correctAnswer": "<a>"
+        },
+        {
+          "id": 3,
+          "question": "Which attribute specifies an alternate text for an image?",
+          "options": ["alt", "src", "title"],
+          "correctAnswer": "alt"
+        },
+        {
+          "id": 4,
+          "question": "What is the correct HTML element for the largest heading?",
+          "options": ["<h1>", "<head>", "<heading>"],
+          "correctAnswer": "<h1>"
+        },
+        {
+          "id": 5,
+          "question": "Which tag is used to define a table row?",
+          "options": ["<tr>", "<td>", "<table>"],
+          "correctAnswer": "<tr>"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "CSS Basics",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What does CSS stand for?",
+          "options": ["Cascading Style Sheets", "Creative Style Sheets", "Computer Style Sheets"],
+          "correctAnswer": "Cascading Style Sheets"
+        },
+        {
+          "id": 2,
+          "question": "Which property is used to change the background color?",
+          "options": ["background-color", "color", "bgcolor"],
+          "correctAnswer": "background-color"
+        },
+        {
+          "id": 3,
+          "question": "What is the correct syntax for a CSS comment?",
+          "options": ["/* Comment */", "// Comment", "<!-- Comment -->"],
+          "correctAnswer": "/* Comment */"
+        },
+        {
+          "id": 4,
+          "question": "Which property is used to set the text color?",
+          "options": ["color", "font-color", "text-color"],
+          "correctAnswer": "color"
+        },
+        {
+          "id": 5,
+          "question": "Which property is used to make text bold?",
+          "options": ["font-weight", "font-style", "text-bold"],
+          "correctAnswer": "font-weight"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Basics",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the correct way to declare a variable in JavaScript?",
+          "options": ["let", "var", "Both let and var"],
+          "correctAnswer": "Both let and var"
+        },
+        {
+          "id": 2,
+          "question": "Which keyword is used to define a constant in JavaScript?",
+          "options": ["const", "let", "var"],
+          "correctAnswer": "const"
+        },
+        {
+          "id": 3,
+          "question": "How do you call a function in JavaScript?",
+          "options": ["functionName()", "call functionName", "run functionName"],
+          "correctAnswer": "functionName()"
+        },
+        {
+          "id": 4,
+          "question": "Which symbol is used to end a statement in JavaScript?",
+          "options": [";", ".", ":"],
+          "correctAnswer": ";"
+        },
+        {
+          "id": 5,
+          "question": "What is the correct way to create an array in JavaScript?",
+          "options": ["[]", "{}", "<>"],
+          "correctAnswer": "[]"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "React Basics",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the primary purpose of React?",
+          "options": ["To build user interfaces", "To manage databases", "To handle server-side routing"],
+          "correctAnswer": "To build user interfaces"
+        },
+        {
+          "id": 2,
+          "question": "What does JSX stand for?",
+          "options": ["JavaScript XML", "JavaScript Extension", "Java Syntax Extension"],
+          "correctAnswer": "JavaScript XML"
+        },
+        {
+          "id": 3,
+          "question": "Which method is used to create a component in React?",
+          "options": ["React.createElement()", "React.newComponent()", "React.buildComponent()"],
+          "correctAnswer": "React.createElement()"
+        },
+        {
+          "id": 4,
+          "question": "What is a Hook in React?",
+          "options": [
+            "A function that lets you use state and lifecycle features",
+            "A way to create animations",
+            "A method for making API calls"
+          ],
+          "correctAnswer": "A function that lets you use state and lifecycle features"
+        },
+        {
+          "id": 5,
+          "question": "Which Hook is used to handle side effects?",
+          "options": ["useEffect", "useState", "useRef"],
+          "correctAnswer": "useEffect"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "TypeScript Basics",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is TypeScript?",
+          "options": ["A superset of JavaScript", "A server-side programming language", "A styling language"],
+          "correctAnswer": "A superset of JavaScript"
+        },
+        {
+          "id": 2,
+          "question": "What is the file extension for TypeScript files?",
+          "options": [".ts", ".js", ".tsx"],
+          "correctAnswer": ".ts"
+        },
+        {
+          "id": 3,
+          "question": "Which keyword is used to define an interface in TypeScript?",
+          "options": ["interface", "class", "type"],
+          "correctAnswer": "interface"
+        },
+        {
+          "id": 4,
+          "question": "What is the purpose of TypeScript?",
+          "options": ["To add static types to JavaScript", "To make JavaScript run faster", "To compile JavaScript into machine code"],
+          "correctAnswer": "To add static types to JavaScript"
+        },
+        {
+          "id": 5,
+          "question": "How do you specify the type for a variable?",
+          "options": ["Using a colon and the type", "Using a type keyword", "Using a TypeScript library"],
+          "correctAnswer": "Using a colon and the type"
+        }
+      ]
+    }
+  ]
+  
