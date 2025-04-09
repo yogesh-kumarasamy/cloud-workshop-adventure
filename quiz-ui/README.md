@@ -35,6 +35,7 @@ This project is a part of the Adventure Cloud Workshop and contains the Quiz UI 
    ```
 
 4. Open the application in your browser at `http://localhost:5173/`.
+5. Login credential is admin/password123
 
 ## Building for Production
 

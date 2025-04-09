@@ -75,6 +75,19 @@ const Login: React.FC = () => {
         <h1 className="text-2xl font-bold mb-4">Login</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <form onSubmit={handleLogin} className="space-y-4">
+          <div className="bg-blue-100 text-blue-800 p-4 rounded-lg mb-4">
+            <p>
+              <strong>Note:</strong> Use the following credentials:
+            </p>
+            <ul className="list-disc list-inside mt-2">
+              <li>
+                <strong>Username:</strong> admin
+              </li>
+              <li>
+                <strong>Password:</strong> password123
+              </li>
+            </ul>
+          </div>
           <div>
             <label className="block font-medium mb-1">Username</label>
             <input
