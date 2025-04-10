@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image
-FROM node:18-alpine
+FROM node:20-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -8,24 +8,19 @@ WORKDIR /app
 COPY package.json ./
 
 # Install dependencies
-RUN npm install -g pnpm && pnpm install
+RUN npm install
 
+RUN rm -rf dist
 # Copy the rest of the application code
 COPY . .
 
+
 # Build the application
-RUN pnpm run build
-
-
-
-RUN npm install -g serve
+RUN npm run build
 
 # Expose the port the app runs on
-ARG PORT=8080
-ENV PORT=$PORT
-ENV HOSTNAME="0.0.0.0"
-EXPOSE $PORT
+ENV PORT=8080
+EXPOSE 8080
 
 # Command to start the application
-# CMD ["sh", "-c", "pnpm run start -- --port ${PORT} --host 0.0.0.0"]
-CMD ["sh", "-c", "serve -s dist -l 8080"]
+CMD ["npm", "run", "start"]
