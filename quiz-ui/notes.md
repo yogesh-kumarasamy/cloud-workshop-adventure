@@ -22,6 +22,7 @@ How to check docker is installed in your local?
 
 
 `docker tag quiz-ui:latest us-central1-docker.pkg.dev/cloudrun-workshop-2025/docker-images/yogesh-quiz-ui:latest` - for aliasing your local image with some other name
+docker build --platform linux/amd64 -t us-central1-docker.pkg.dev/cloudrun-workshop-2025/docker-images/yogesh-quiz-api:latest
 ```docker tag quiz-ui:latest: Uses your existing local image "quiz-ui:latest".
 us-central1-docker.pkg.dev: Specifies the registry endpoint for Artifact Registry in the us-central1 region.
 cloudrun-workshop-2025: Your Google Cloud project ID.
@@ -36,7 +37,21 @@ gcloud run deploy yogesh-quiz-ui \
   --image=us-central1-docker.pkg.dev/cloudrun-workshop-2025/docker-images/yogesh-quiz-ui:latest \
   --platform managed \
   --region us-central1 \
-  --allow-unauthenticated \
-  --timeout=300 \
-  --port=8080
+  --allow-unauthenticated 
+  gcloud run deploy yogesh-quiz-api \
+  --image=us-central1-docker.pkg.dev/cloudrun-workshop-2025/docker-images/yogesh-quiz-api:latest \
+  --platform managed \
+  --region us-central1 \
+  --allow-unauthenticated 
 
+`docker build --platform linux/amd64 -t us-central1-docker.pkg.dev/cloudrun-workshop-2025/docker-images/yogesh-quiz-ui:latest .` - explore docker arguments and why
+
+How did we choose FROM node:20-alpine earlier it was 18
+
+How not to copy and only needed sources?
+
+How to use Dockerignore file
+
+How did we installed serve package and why? what's the diff between vite server and actual server? @vite/preview - explore
+
+understand the ports and host in servers
